@@ -4,9 +4,15 @@
       "type": "page",
       "settings": {
       }
+    },
+    "7097edb1-00a0-40de-ba10-087661aa854b": {
+      "type": "blockify-header-1",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "7097edb1-00a0-40de-ba10-087661aa854b"
   ]
 }
