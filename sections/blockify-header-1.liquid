@@ -1,6 +1,7 @@
 <style>
   .blockify__collection--1 .blockify-collection__inner {
     display: grid;
+    gap: {{ section.settings.gap_size }}px;
   }
   .blockify__collection--1.gtc-2 .blockify-collection__inner {
     grid-template-columns: repeat(2,1fr);
@@ -14,6 +15,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+  .blockify__collection--1 .blockify-collection__inner .blockify-collection__single-item img.blockify-collection__image {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 200px;
+    transition: transform .4s ease;
+  }
+  .blockify__collection--1 .blockify-collection__inner .blockify-collection__single-item:hover img.blockify-collection__image {
+    transform: translateY(-50%) scale(1.05);
   }
 </style>
 <div class="blockify__collection--1 gtc-{{ section.settings.columns_desktop }}">
@@ -25,6 +39,11 @@
           {{ block.settings.collection.title }}
         </h3>
         <a href="#">Shop now</a>
+        {% if block.settings.category_image != blank %}
+          {{ block.settings.category_image | image_url: width: 400 | image_tag: loading: 'lazy', class: 'blockify-collection__image' }}
+          {% else %}
+          {{ block.settings.collection.image | image_url: width: 400 | image_tag: loading: 'lazy', class: 'blockify-collection__image' }}
+        {% endif %}
         </div>
       {% endfor %}
     </div>
