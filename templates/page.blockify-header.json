@@ -20,14 +20,14 @@
           "type": "Collection",
           "settings": {
             "collection": "mutzen",
-            "bgcolor": "#D6D3C9"
+            "bgcolor": "#c9cbd6"
           }
         },
         "a04e0a60-d72b-402b-9e8f-6da1fb92249d": {
           "type": "Collection",
           "settings": {
             "collection": "schals",
-            "bgcolor": "#D6D3C9"
+            "bgcolor": "#c9d6cc"
           }
         }
       },
