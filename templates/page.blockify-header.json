@@ -7,7 +7,38 @@
     },
     "7097edb1-00a0-40de-ba10-087661aa854b": {
       "type": "blockify-header-1",
+      "blocks": {
+        "c6fd08d5-eb91-48cd-a947-11c4c5e5a41c": {
+          "type": "Collection",
+          "settings": {
+            "collection": "fahrzeuge"
+          }
+        },
+        "1299d892-0857-49c0-abaa-9186ee7975d5": {
+          "type": "Collection",
+          "settings": {
+            "collection": "mutzen"
+          }
+        },
+        "a04e0a60-d72b-402b-9e8f-6da1fb92249d": {
+          "type": "Collection",
+          "settings": {
+            "collection": "schals"
+          }
+        }
+      },
+      "block_order": [
+        "c6fd08d5-eb91-48cd-a947-11c4c5e5a41c",
+        "1299d892-0857-49c0-abaa-9186ee7975d5",
+        "a04e0a60-d72b-402b-9e8f-6da1fb92249d"
+      ],
       "settings": {
+        "columns_desktop": "2",
+        "gap_size": 32,
+        "section_padding_top_desktop": 120,
+        "section_padding_bottom_desktop": 120,
+        "section_padding_top_mobile": 120,
+        "section_padding_bottom_mobile": 120
       }
     }
   },
