@@ -1,20 +1,30 @@
 <style>
-  .blockify__collection--1 {
+  .blockify__collection--1 .blockify-collection__inner {
     display: grid;
   }
-  .blockify__collection--1.gtc-2 {
+  .blockify__collection--1.gtc-2 .blockify-collection__inner {
     grid-template-columns: repeat(2,1fr);
   }
-  .blockify__collection--1.gtc-3 {
+  .blockify__collection--1.gtc-3 .blockify-collection__inner {
     grid-template-columns: repeat(3,1fr);
   }
+  .blockify__collection--1 .blockify-collection__inner .blockify-collection__single-item {
+    height: 260px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 </style>
-<div class="blockify__collections--1">
+<div class="blockify__collection--1 gtc-{{ section.settings.columns_desktop }}">
   <div class="container">
     <div class="blockify-collection__inner">
       {% for block in section.blocks %}
-        <div class="blockify-collection__single-item">
+        <div class="blockify-collection__single-item" style="background: {{ block.settings.bgcolor }}">
+        <h3>
           {{ block.settings.collection.title }}
+        </h3>
+        <a href="#">Shop now</a>
         </div>
       {% endfor %}
     </div>
@@ -116,6 +126,12 @@
           "type": "image_picker",
           "id": "category_image",
           "label": "Custom Category Image"
+        },
+        {
+          "type": "color",
+          "id": "bgcolor",
+          "label": "Background color",
+          "default": "#D6D3C9"
         }
        ]
      }
