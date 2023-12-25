@@ -1,18 +1,127 @@
-<div class="blockify__header-1">
+<style>
+  .blockify__collection--1 {
+    display: grid;
+  }
+  .blockify__collection--1.gtc-2 {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .blockify__collection--1.gtc-3 {
+    grid-template-columns: repeat(3,1fr);
+  }
+</style>
+<div class="blockify__collections--1">
   <div class="container">
-    123
+    <div class="blockify-collection__inner">
+      {% for block in section.blocks %}
+        <div class="blockify-collection__single-item">
+          {{ block.settings.collection.title }}
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
+
 {% schema %}
   {
-    "name": "Blockify - Header 1",
+    "name": "Blockify - Collection 1",
     "tag": "section",
     "class": "section",
-    "settings": [],
-    "blocks": [],
+    "settings": [
+      {
+        "type": "select",
+        "id": "columns_desktop",
+        "label": "Items per row Desktop",
+        "options": [
+          {
+            "value": "2",
+            "label": "2"
+          },
+          {
+            "value": "3",
+            "label": "3"
+          }
+        ],
+        "default": "2"
+      },
+      {
+        "type": "range",
+        "id": "gap_size",
+        "min": 0,
+        "max": 80,
+        "step": 4,
+        "unit": "px",
+        "label": "Gap size",
+        "default": 32
+      },
+      {
+        "type": "header",
+        "content": "Padding Desktop"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_desktop",
+        "min": 0,
+        "max": 148,
+        "step": 4,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 120
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_desktop",
+        "min": 0,
+        "max": 148,
+        "step": 4,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 120
+      },
+      {
+        "type": "header",
+        "content": "Padding Mobile"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_mobile",
+        "min": 0,
+        "max": 148,
+        "step": 4,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 120
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_mobile",
+        "min": 0,
+        "max": 148,
+        "step": 4,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 120
+      }
+    ],
+    "blocks": [
+      {
+       "name": "Collection",
+       "type": "Collection",
+       "settings": [
+        {
+          "type": "collection",
+          "id": "collection"
+        },
+        {
+          "type": "image_picker",
+          "id": "category_image",
+          "label": "Custom Category Image"
+        }
+       ]
+     }
+    ],
     "presets": [
       {
-        "name": "Blockify - Header 1"
+        "name": "Blockify - Collection 1"
       }
     ]
   }

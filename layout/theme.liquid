@@ -74,17 +74,17 @@ template-{{ template.name | handle }} {{ template.name }}-{{ template.suffix }} 
         </div>
       </div>
     {% endif %}
-    {%- liquid
+    {% comment %} {%- liquid
       render 'theme-data'
       sections 'header-group'
       render 'scroll-top-button'
-    -%}
+    -%} {% endcomment %}
 
     <main role="main" id="MainContent">
       {{ content_for_layout }}
     </main>
 
-    {%- sections 'footer-group' -%}
+    {% comment %} {%- sections 'footer-group' -%} {% endcomment %}
 
     {% render 'custom-code-body' %}
     {% render 'script-tags' %}
