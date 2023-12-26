@@ -11,19 +11,23 @@
         "c6fd08d5-eb91-48cd-a947-11c4c5e5a41c": {
           "type": "Collection",
           "settings": {
-            "collection": "fahrzeuge"
+            "collection": "fahrzeuge",
+            "category_image": "shopify:\/\/shop_images\/school-backpack-isolated-png.webp",
+            "bgcolor": "#D6D3C9"
           }
         },
         "1299d892-0857-49c0-abaa-9186ee7975d5": {
           "type": "Collection",
           "settings": {
-            "collection": "mutzen"
+            "collection": "mutzen",
+            "bgcolor": "#c9cbd6"
           }
         },
         "a04e0a60-d72b-402b-9e8f-6da1fb92249d": {
           "type": "Collection",
           "settings": {
-            "collection": "schals"
+            "collection": "schals",
+            "bgcolor": "#c9d6cc"
           }
         }
       },
