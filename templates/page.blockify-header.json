@@ -5,36 +5,27 @@
       "settings": {
       }
     },
-    "7097edb1-00a0-40de-ba10-087661aa854b": {
-      "type": "blockify-header-1",
+    "48ca370e-0a85-4cce-9506-9b237e34187b": {
+      "type": "blockify-collection-1",
       "blocks": {
-        "c6fd08d5-eb91-48cd-a947-11c4c5e5a41c": {
-          "type": "Collection",
-          "settings": {
-            "collection": "fahrzeuge",
-            "category_image": "shopify:\/\/shop_images\/school-backpack-isolated-png.webp",
-            "bgcolor": "#D6D3C9"
-          }
-        },
-        "1299d892-0857-49c0-abaa-9186ee7975d5": {
+        "2f727cde-43c9-43a0-b1c6-b37c31d4d738": {
           "type": "Collection",
           "settings": {
             "collection": "mutzen",
-            "bgcolor": "#c9cbd6"
+            "bgcolor": "#D6D3C9"
           }
         },
-        "a04e0a60-d72b-402b-9e8f-6da1fb92249d": {
+        "e7965c05-8c5d-4ffc-8b3d-d6dd4b1ed572": {
           "type": "Collection",
           "settings": {
-            "collection": "schals",
-            "bgcolor": "#c9d6cc"
+            "collection": "fahrzeuge",
+            "bgcolor": "#D6D3C9"
           }
         }
       },
       "block_order": [
-        "c6fd08d5-eb91-48cd-a947-11c4c5e5a41c",
-        "1299d892-0857-49c0-abaa-9186ee7975d5",
-        "a04e0a60-d72b-402b-9e8f-6da1fb92249d"
+        "2f727cde-43c9-43a0-b1c6-b37c31d4d738",
+        "e7965c05-8c5d-4ffc-8b3d-d6dd4b1ed572"
       ],
       "settings": {
         "columns_desktop": "2",
@@ -48,6 +39,6 @@
   },
   "order": [
     "main",
-    "7097edb1-00a0-40de-ba10-087661aa854b"
+    "48ca370e-0a85-4cce-9506-9b237e34187b"
   ]
 }
