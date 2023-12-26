@@ -1,4 +1,8 @@
 <style>
+  .blockify__collection--1 {
+    padding-top: {{ section.settings.section_padding_top_desktop }}px;
+    padding-bottom: {{ section.settings.section_padding_bottom_desktop }}px;
+  }
   .blockify__collection--1 .blockify-collection__inner {
     display: grid;
     gap: {{ section.settings.gap_size }}px;
@@ -30,7 +34,8 @@
     transform: translateY(-50%) scale(1.05);
   }
 </style>
-<div class="blockify__collection--1 gtc-{{ section.settings.columns_desktop }}">
+<link rel="stylesheet" href="{{ "blockify-collections.css" | asset_url }}">
+<div class="blockify__collection--1 blockify__grid gtc-{{ section.settings.columns_desktop }}">
   <div class="container">
     <div class="blockify-collection__inner">
       {% for block in section.blocks %}
